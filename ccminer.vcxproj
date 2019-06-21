@@ -208,6 +208,7 @@
       <LinkStatus>false</LinkStatus>
       <LargeAddressAware>true</LargeAddressAware>
       <GenerateDebugInformation>false</GenerateDebugInformation>
+      <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
     </Link>
     <CudaCompile>
       <CInterleavedPTX>false</CInterleavedPTX>
