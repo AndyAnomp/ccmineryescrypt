@@ -356,6 +356,10 @@ extern int scanhash_whirlpoolx(int thr_id, uint32_t *pdata,
 	uint32_t *ptarget, uint32_t max_nonce,
 	uint32_t *hashes_done);
 
+extern int scanhash_hash0x10(int thr_id, uint32_t *pdata,
+	uint32_t *ptarget, uint32_t max_nonce,
+	uint32_t *hashes_done);
+
 extern int scanhash_x11(int thr_id, uint32_t *pdata,
 	uint32_t *ptarget, uint32_t max_nonce,
 	uint32_t *hashes_done);
@@ -706,6 +710,7 @@ enum sha_algos
 	ALGO_S3,
 	ALGO_WHC,
 	ALGO_WHCX,
+	ALGO_0X10,
 	ALGO_X11,
 	ALGO_X13,
 	ALGO_X14,
@@ -792,6 +797,7 @@ void qubithash(void *state, const void *input);
 void skeincoinhash(void *output, const void *input);
 void s3hash(void *output, const void *input);
 void wcoinhash(void *state, const void *input);
+void hash0x10(void *output, const void *input);
 void x11hash(void *output, const void *input);
 void x13hash(void *output, const void *input);
 void x14hash(void *output, const void *input);

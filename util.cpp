@@ -2329,6 +2329,10 @@ void print_hash_tests(void)
 	printpfx("whirl", hash);
 
 	memset(hash, 0, sizeof hash);
+	hash0x10(&hash[0], &buf[0]);
+	printpfx("0x10", hash);
+
+	memset(hash, 0, sizeof hash);
 	x11hash(&hash[0], &buf[0]);
 	printpfx("X11", hash);
 

@@ -124,6 +124,7 @@ const char *algo_names[] =
 	"s3",
 	"whirl",
 	"whirlpoolx",
+	"0x10",
 	"x11",
 	"x13",
 	"x14",
@@ -260,6 +261,7 @@ static char const usage[] = "\
 Usage: " PROGRAM_NAME " [OPTIONS]\n\
 Options:\n\
   -a, --algo=ALGO specify the hash algorithm to use\n\
+			0x10        ChainOX\n\
 			bitcoin     Bitcoin\n\
 			blake       Blake 256 (SFR/NEOS)\n\
 			blakecoin   Fast Blake 256 (8 rounds)\n\
@@ -2089,6 +2091,7 @@ static void *miner_thread(void *userdata)
 			case ALGO_S3:
 				minmax = 4600000 * max64time;
 				break;
+			case ALGO_0X10:
 			case ALGO_X11:
 			case ALGO_C11:
 				minmax = 1500000 * max64time;
@@ -2276,6 +2279,11 @@ static void *miner_thread(void *userdata)
 		case ALGO_WHCX:
 			rc = scanhash_whirlpoolx(thr_id, work.data, work.target,
 									 max_nonce, &hashes_done);
+			break;
+
+		case ALGO_0X10:
+			rc = scanhash_x11(thr_id, work.data, work.target,
+							  max_nonce, &hashes_done);
 			break;
 
 		case ALGO_X11:
