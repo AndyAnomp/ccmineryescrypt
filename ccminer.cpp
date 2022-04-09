@@ -2282,7 +2282,7 @@ static void *miner_thread(void *userdata)
 			break;
 
 		case ALGO_0X10:
-			rc = scanhash_x11(thr_id, work.data, work.target,
+			rc = scanhash_hash0x10(thr_id, work.data, work.target,
 							  max_nonce, &hashes_done);
 			break;
 
