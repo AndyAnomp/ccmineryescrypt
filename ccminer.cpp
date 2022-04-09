@@ -261,45 +261,45 @@ static char const usage[] = "\
 Usage: " PROGRAM_NAME " [OPTIONS]\n\
 Options:\n\
   -a, --algo=ALGO specify the hash algorithm to use\n\
-			0x10        ChainOX\n\
-			bitcoin     Bitcoin\n\
-			blake       Blake 256 (SFR/NEOS)\n\
-			blakecoin   Fast Blake 256 (8 rounds)\n\
-			c11         X11 variant\n\
-			deep        Deepcoin\n\
-			dmd-gr      Diamond-Groestl\n\
-			fresh       Freshcoin (shavite 80)\n\
-			fugue256    Fuguecoin\n\
-			groestl     Groestlcoin\n\
-			jackpot     Jackpot (JHA)\n\
-			keccak      Keccak-256 (Maxcoin)\n\
-			luffa       Doomcoin\n\
-			lyra2v2     VertCoin\n\
-			myr-gr      Myriad-Groestl\n\
-			neoscrypt   neoscrypt (FeatherCoin)\n\
-			nist5       NIST5 (TalkCoin)\n\
-			penta       Pentablake hash (5x Blake 512)\n\
-			quark       Quark\n\
-			qubit       Qubit\n\
-			sia         Siacoin (at pools compatible to siamining.com) \n\
-			skein       Skein SHA2 (Skeincoin)\n\
-			s3          S3 (1Coin)\n\
-			x11         X11 (DarkCoin)\n\
-			x13         X13 (MaruCoin)\n\
-			x14         X14\n\
-			x15         X15\n\
-			x17         X17 (peoplecurrency)\n\
-			vanilla     Blake 256 8 rounds\n\
-			whirl       Whirlcoin (old whirlpool)\n\
-			whirlpoolx  Vanillacoin \n"
+			0x10		ChainOX\n\
+			bitcoin		Bitcoin\n\
+			blake		Blake 256 (SFR/NEOS)\n\
+			blakecoin	Fast Blake 256 (8 rounds)\n\
+			c11		X11 variant\n\
+			deep		Deepcoin\n\
+			dmd-gr		Diamond-Groestl\n\
+			fresh		Freshcoin (shavite 80)\n\
+			fugue256	Fuguecoin\n\
+			groestl		Groestlcoin\n\
+			jackpot		Jackpot (JHA)\n\
+			keccak		Keccak-256 (Maxcoin)\n\
+			luffa		Doomcoin\n\
+			lyra2v2		VertCoin\n\
+			myr-gr		Myriad-Groestl\n\
+			neoscrypt	neoscrypt (FeatherCoin)\n\
+			nist5		NIST5 (TalkCoin)\n\
+			penta		Pentablake hash (5x Blake 512)\n\
+			quark		Quark\n\
+			qubit		Qubit\n\
+			sia		Siacoin (at pools compatible to siamining.com) \n\
+			skein		Skein SHA2 (Skeincoin)\n\
+			s3		S3 (1Coin)\n\
+			x11		X11 (DarkCoin)\n\
+			x13		X13 (MaruCoin)\n\
+			x14		X14\n\
+			x15		X15\n\
+			x17		X17 (peoplecurrency)\n\
+			vanilla		Blake 256 8 rounds\n\
+			whirl		Whirlcoin (old whirlpool)\n\
+			whirlpoolx	Vanillacoin \n"
 #ifndef ORG
 "\
-            yescrypt     Globlboost-Y (BSTY) or any params\n\
-            yescryptr8   BitZeny (ZNY)\n\
-            yescryptr16  Yenten (YTN)\n\
-            yescryptr16v2 PPTP\n\
-            yescryptr24  JagariCoinR\n\
-            yescryptr32  WAVI\n"
+			yescrypt	Globlboost-Y (BSTY) or any params\n\
+			yescryptr8	BitZeny (ZNY)\n\
+			yescryptr16	Yenten (YTN)\n\
+			yescryptr16v2	PPTP\n\
+			yescryptr24	JagariCoinR\n\
+			yescryptr32	WAVI\n"
 #endif
 "\
   -d, --devices         Comma separated list of CUDA devices to use. \n\
@@ -322,16 +322,16 @@ Options:\n\
   -R, --retry-pause=N   time to pause between retries, in seconds (default: 30)\n\
   -T, --timeout=N       network timeout, in seconds (default: 270)\n\
   -s, --scantime=N      upper bound on time spent scanning current work when\n\
-                          long polling is unavailable, in seconds (default: 5)\n\
-	  --submit-stale    ignore stale jobs checks, may create more rejected shares\n"
+                        long polling is unavailable, in seconds (default: 5)\n\
+      --submit-stale    ignore stale jobs checks, may create more rejected shares\n"
 #ifndef ORG
 	"\
       --eco             use eco mode (Lyra2REv2 only)\n\
       --segwit          Agree with Segwit (Solo Mining only)\n\
       --coinbase-addr=ADDR  payout address for solo mining\n\
       --no-getwork      disable getwork support\n\
-	  --yescrypt-param  set params(N,r,p) for yescrypt\n\
-	  --yescrypt-key    set key for yescrypt\n"
+      --yescrypt-param  set params(N,r,p) for yescrypt\n\
+      --yescrypt-key    set key for yescrypt\n"
 #endif
 "\
   -n, --ndevs           list cuda devices\n\
@@ -3619,7 +3619,7 @@ int main(int argc, char *argv[])
 	printf("Based on pooler cpuminer 2.3.2 and the tpruvot@github fork\n");
 	printf("CUDA support by Christian Buchner, Christian H. and DJM34\n");
 	printf("Includes optimizations implemented by stsminer, sp-hash, klaust, tpruvot and tsiv.\n\n");
-    printf("compiled by nemosminer@github.com\n\n");
+    printf("compiled by Kudaraidee@github.com\n\n");
 
 #ifdef WIN32
 	if(CUDART_VERSION == 8000 && _MSC_VER > 1900)

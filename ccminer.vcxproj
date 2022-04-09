@@ -499,6 +499,15 @@
     <CudaCompile Include="x17\x17.cu">
     </CudaCompile>
   </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\ccminer.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="res\ccminer.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="README.txt" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
     <Import Project="$(VCTargetsPath)\BuildCustomizations\CUDA 10.2.targets" />
