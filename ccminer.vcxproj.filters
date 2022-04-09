@@ -463,6 +463,9 @@
     <CudaCompile Include="x11\fresh.cu">
       <Filter>Source Files\CUDA\x11</Filter>
     </CudaCompile>
+    <CudaCompile Include="x11\0x10.cu">
+      <Filter>Source Files\CUDA\x11</Filter>
+    </CudaCompile>
     <CudaCompile Include="x11\x11.cu">
       <Filter>Source Files\CUDA\x11</Filter>
     </CudaCompile>
@@ -598,5 +601,15 @@
     <CudaCompile Include="lyra2\lyra2RE.cu">
       <Filter>Source Files\CUDA\Lyra2</Filter>
     </CudaCompile>
+    <CudaCompile Include="x11\cuda_x11_luffa512.cu" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="res\ccminer.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\ccminer.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="README.txt" />
   </ItemGroup>
 </Project>
